@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="codigo errado" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Eg2hEFZZsJcr1IyZCYKPxOnOTm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AndréAvelarMoriyaSat/Desktop/crw-clothing/src/components/sign-in-form&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\sign-in-form" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src" />
+      <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\checkout-item" />
+      <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\routes\checkout" />
+      <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\cart-item" />
+      <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\button" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="" />
+      <created>1663003023272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663003023272</updated>
+      <workItem from="1663003026608" duration="7325000" />
+      <workItem from="1663085875765" duration="741000" />
+      <workItem from="1663089038853" duration="301000" />
+      <workItem from="1663089360387" duration="5000" />
+      <workItem from="1663090202557" duration="25000" />
+      <workItem from="1663090427556" duration="1452000" />
+      <workItem from="1663091977174" duration="4029000" />
+      <workItem from="1663099353920" duration="1499000" />
+      <workItem from="1663160440377" duration="1942000" />
+      <workItem from="1663165283917" duration="8043000" />
+      <workItem from="1663355620528" duration="4900000" />
+      <workItem from="1663616564348" duration="3783000" />
+      <workItem from="1663675022619" duration="203000" />
+      <workItem from="1663677638596" duration="1252000" />
+      <workItem from="1663711681869" duration="2202000" />
+      <workItem from="1663763266994" duration="12823000" />
+      <workItem from="1663862225558" duration="1095000" />
+      <workItem from="1663934898932" duration="1188000" />
+      <workItem from="1663954766573" duration="32000" />
+      <workItem from="1664830239519" duration="3276000" />
+      <workItem from="1664888338253" duration="33000" />
+      <workItem from="1665007173328" duration="347000" />
+      <workItem from="1665081689084" duration="1800000" />
+      <workItem from="1665083592544" duration="2478000" />
+      <workItem from="1665142714211" duration="5688000" />
+      <workItem from="1665160477874" duration="59000" />
+      <workItem from="1665160615466" duration="68000" />
+      <workItem from="1665160870352" duration="29000" />
+      <workItem from="1665425298470" duration="1735000" />
+      <workItem from="1665434281986" duration="1413000" />
+    </task>
+    <task id="LOCAL-00001" summary="commmit font">
+      <created>1663019242123</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663019242123</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commmit navigation and route">
+      <created>1663098580926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663098580926</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commmit navigation and route">
+      <created>1663185696988</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663185696988</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commmit navigation and route">
+      <created>1663624842741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663624842741</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commmit">
+      <created>1663675217785</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675217785</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commmit">
+      <created>1663713918289</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663713918289</updated>
+    </task>
+    <task id="LOCAL-00007" summary="created authentication component and sign in form">
+      <created>1663769905445</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663769905445</updated>
+    </task>
+    <task id="LOCAL-00008" summary="work progress">
+      <created>1663784380727</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663784380728</updated>
+    </task>
+    <task id="LOCAL-00009" summary="products">
+      <created>1663863334962</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663863334962</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ultimas aulas do curso de react cart-item, dropdown, context e etc">
+      <created>1664832820845</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664832820845</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit de correção">
+      <created>1665083667644</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665083667645</updated>
+    </task>
+    <task id="LOCAL-00012" summary="checkout page and checkout-item">
+      <created>1665147485477</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665147485477</updated>
+    </task>
+    <task id="LOCAL-00013" summary="codigo errado">
+      <created>1665435774532</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665435774532</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commmit font" />
+    <MESSAGE value="commmit navigation and route" />
+    <MESSAGE value="commmit" />
+    <MESSAGE value="created authentication component and sign in form" />
+    <MESSAGE value="work progress" />
+    <MESSAGE value="products" />
+    <MESSAGE value="ultimas aulas do curso de react cart-item, dropdown, context e etc" />
+    <MESSAGE value="commit de correção" />
+    <MESSAGE value="checkout page and checkout-item" />
+    <MESSAGE value="codigo errado" />
+    <option name="LAST_COMMIT_MESSAGE" value="codigo errado" />
+  </component>
+</project>
