@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="codigo errado" />
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="codigo errado">
+      <change beforePath="$PROJECT_DIR$/src/contexts/products.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/products.context.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +89,7 @@
       <workItem from="1665160615466" duration="68000" />
       <workItem from="1665160870352" duration="29000" />
       <workItem from="1665425298470" duration="1735000" />
-      <workItem from="1665434281986" duration="1413000" />
+      <workItem from="1665434281986" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -180,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665435774532</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="codigo errado">
+      <created>1665436066923</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665436066923</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
