@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="aula 133">
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="styled-components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-item/category-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory-item/directory-item.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory-item/directory-item.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/category/category.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/category/category.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/category/category.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/category/category.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +93,7 @@
       <workItem from="1665160870352" duration="29000" />
       <workItem from="1665425298470" duration="1735000" />
       <workItem from="1665434281986" duration="1698000" />
-      <workItem from="1665688462496" duration="1023000" />
+      <workItem from="1665688462496" duration="2976000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -211,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665681149630</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="aula 135">
+      <created>1665689711209</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665689711209</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +244,8 @@
     <MESSAGE value="codigo errado" />
     <MESSAGE value="aula 132" />
     <MESSAGE value="aula 133" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula 133" />
+    <MESSAGE value="aula 135" />
+    <MESSAGE value="styled-components" />
+    <option name="LAST_COMMIT_MESSAGE" value="styled-components" />
   </component>
 </project>
