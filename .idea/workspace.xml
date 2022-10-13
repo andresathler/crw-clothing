@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.styles.scss" afterDir="false" />
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="aula 133">
+      <change afterPath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/category/category.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/category/category.styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/products.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/categories.context.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665436066923</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="aula 132">
+      <created>1665673513667</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665673513667</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +230,8 @@
     <MESSAGE value="commit de correção" />
     <MESSAGE value="checkout page and checkout-item" />
     <MESSAGE value="codigo errado" />
-    <option name="LAST_COMMIT_MESSAGE" value="codigo errado" />
+    <MESSAGE value="aula 132" />
+    <MESSAGE value="aula 133" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula 133" />
   </component>
 </project>
