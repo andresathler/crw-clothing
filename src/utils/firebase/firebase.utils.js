@@ -19,7 +19,6 @@ import {
   query,
   getDocs,
 } from 'firebase/firestore';
-import async from "async";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDOVWYjWYL-mThlnojOKDjfZBu-28SuuRw",
@@ -39,8 +38,10 @@ googleProvider.setCustomParameters({
 });
 
 export const auth = getAuth();
+
 export const signInWithGooglePopup = () =>
   signInWithPopup(auth, googleProvider);
+
 export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
 

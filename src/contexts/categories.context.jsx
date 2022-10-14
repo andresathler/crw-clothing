@@ -6,18 +6,18 @@ export const CategoriesContext = createContext({
   categoriesMap: {},
 });
 
-export const ProductsProvider = ({ children }) => {
+export const CategoriesProvider = ({ children }) => {
   const [categoriesMap, setCategoriesMap] = useState({});
 
   useEffect(() => {
     const getCategoriesMap = async () => {
-     const categoryMap = await getCategoriesAndDocuments();
-     console.log(categoryMap);
-     setCategoriesMap(categoryMap);
-    }
+      const categoryMap = await getCategoriesAndDocuments();
+      console.log(categoryMap);
+      setCategoriesMap(categoryMap);
+    };
 
     getCategoriesMap();
-  }, [])
+  }, []);
 
   const value = { categoriesMap };
   return (
