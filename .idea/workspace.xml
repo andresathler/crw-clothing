@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="algumas correções e navigate home page">
-      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="_redirects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory-item/directory-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory-item/directory-item.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/categories.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/categories.context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/user.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/user.context.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,24 +27,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/AndréAvelarMoriyaSat/Desktop/crw-clothing/src/components/sign-in-form",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AndréAvelarMoriyaSat/Desktop/crw-clothing/src/components/sign-in-form&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\sign-in-form" />
@@ -95,7 +97,11 @@
       <workItem from="1665434281986" duration="1698000" />
       <workItem from="1665688462496" duration="3259000" />
       <workItem from="1665747756392" duration="10369000" />
-      <workItem from="1665759224640" duration="2387000" />
+      <workItem from="1665759224640" duration="3247000" />
+      <workItem from="1666111319492" duration="2065000" />
+      <workItem from="1666122452618" duration="157000" />
+      <workItem from="1666205686039" duration="50000" />
+      <workItem from="1666205764384" duration="2865000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -230,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665760040682</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="_redirects">
+      <created>1665767187513</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1665767187513</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +276,7 @@
     <MESSAGE value="aula 135" />
     <MESSAGE value="styled-components" />
     <MESSAGE value="algumas correções e navigate home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="algumas correções e navigate home page" />
+    <MESSAGE value="_redirects" />
+    <option name="LAST_COMMIT_MESSAGE" value="_redirects" />
   </component>
 </project>

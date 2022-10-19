@@ -1,0 +1,151 @@
+Index: src/utils/firebase/firebase.utils.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { initializeApp } from 'firebase/app';\r\nimport {\r\n  getAuth,\r\n  signInWithRedirect,\r\n  signInWithPopup,\r\n  GoogleAuthProvider,\r\n  createUserWithEmailAndPassword,\r\n  signInWithEmailAndPassword,\r\n  signOut,\r\n  onAuthStateChanged,\r\n} from 'firebase/auth';\r\nimport {\r\n  getFirestore,\r\n  doc,\r\n  getDoc,\r\n  setDoc,\r\n  collection,\r\n  writeBatch,\r\n} from 'firebase/firestore';\r\n\r\nconst firebaseConfig = {\r\n  apiKey: \"AIzaSyDOVWYjWYL-mThlnojOKDjfZBu-28SuuRw\",\r\n  authDomain: \"crw-clothing-db-7911d.firebaseapp.com\",\r\n  projectId: \"crw-clothing-db-7911d\",\r\n  storageBucket: \"crw-clothing-db-7911d.appspot.com\",\r\n  messagingSenderId: \"614554922914\",\r\n  appId: \"1:614554922914:web:788b1dbe1a08a0e1084cfb\",\r\n};\r\n\r\nconst firebaseApp = initializeApp(firebaseConfig);\r\n\r\nconst googleProvider = new GoogleAuthProvider();\r\n\r\ngoogleProvider.setCustomParameters({\r\n  prompt: 'select_account',\r\n});\r\n\r\nexport const auth = getAuth();\r\nexport const signInWithGooglePopup = () =>\r\n  signInWithPopup(auth, googleProvider);\r\nexport const signInWithGoogleRedirect = () =>\r\n  signInWithRedirect(auth, googleProvider);\r\n\r\nexport const db = getFirestore();\r\n\r\nexport const addCollectionAndDocuments = async (\r\n  collectionKey,\r\n  objectsToAdd\r\n) => {\r\n  const batch = writeBatch(db);\r\n  const collectionRef = collection(db, collectionKey);\r\n  \r\n  objectsToAdd.forEach((object) => {\r\n     const docRef = doc(collectionRef, object.title.toLowerCase());\r\n     batch.set(docRef, object);\r\n  });\r\n\r\n  await batch.commit();\r\n  console.log('done');\r\n};\r\n\r\nexport const createUserDocumentFromAuth = async (\r\n  userAuth,\r\n  additionalInformation = {}\r\n) => {\r\n  if (!userAuth) return;\r\n\r\n  const userDocRef = doc(db, 'users', userAuth.uid);\r\n\r\n  const userSnapshot = await getDoc(userDocRef);\r\n\r\n  if (!userSnapshot.exists()) {\r\n    const { displayName, email } = userAuth;\r\n    const createdAt = new Date();\r\n\r\n    try {\r\n      await setDoc(userDocRef, {\r\n        displayName,\r\n        email,\r\n        createdAt,\r\n        ...additionalInformation,\r\n      });\r\n    } catch (error) {\r\n      console.log('error creating the user', error.message);\r\n    }\r\n  }\r\n\r\n  return userDocRef;\r\n};\r\n\r\nexport const createAuthUserWithEmailAndPassword = async (email, password) => {\r\n  if (!email || !password) return;\r\n\r\n  return await createUserWithEmailAndPassword(auth, email, password);\r\n};\r\n\r\nexport const signInAuthUserWithEmailAndPassword = async (email, password) => {\r\n  if (!email || !password) return;\r\n\r\n  return await signInWithEmailAndPassword(auth, email, password);\r\n};\r\n\r\nexport const signOutUser = async () => await signOut(auth);\r\n\r\nexport const onAuthStateChangedListener = (callback) =>\r\n  onAuthStateChanged(auth, callback);\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/utils/firebase/firebase.utils.js b/src/utils/firebase/firebase.utils.js
+--- a/src/utils/firebase/firebase.utils.js	(revision f7e543b9ae3340a774e90744e8b8559bf7a535df)
++++ b/src/utils/firebase/firebase.utils.js	(date 1665517840087)
+@@ -16,7 +16,10 @@
+   setDoc,
+   collection,
+   writeBatch,
++  query,
++  getDocs,
+ } from 'firebase/firestore';
++import async from "async";
+ 
+ const firebaseConfig = {
+   apiKey: "AIzaSyDOVWYjWYL-mThlnojOKDjfZBu-28SuuRw",
+@@ -59,6 +62,21 @@
+   console.log('done');
+ };
+ 
++export const getCategoriesAndDocuments = async () => {
++  const collectionRef = collection(db, "categories");
++  const q = query(collectionRef);
++
++  const querySnapshot = await getDocs(q);
++  const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
++    const { title, items } = docSnapshot.data();
++    acc[title.toLowerCase()] = items;
++
++    return acc;
++  }, {});
++
++  return categoryMap;
++}
++
+ export const createUserDocumentFromAuth = async (
+   userAuth,
+   additionalInformation = {}
+Index: src/contexts/products.context.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { createContext, useState, useEffect } from 'react';\r\n\r\nimport { addCollectionAndDocuments } from '../utils/firebase/firebase.utils';\r\n\r\nexport const ProductsContext = createContext({\r\n  products: [],\r\n});\r\n\r\nexport const ProductsProvider = ({ children }) => {\r\n  const [products, setProducts] = useState([]);\r\n\r\n  const value = { products };\r\n  return (\r\n    <ProductsContext.Provider value={value}>\r\n      {children}\r\n    </ProductsContext.Provider>\r\n  );\r\n};\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/contexts/products.context.jsx b/src/contexts/products.context.jsx
+--- a/src/contexts/products.context.jsx	(revision f7e543b9ae3340a774e90744e8b8559bf7a535df)
++++ b/src/contexts/products.context.jsx	(date 1665518062836)
+@@ -1,6 +1,6 @@
+ import { createContext, useState, useEffect } from 'react';
+ 
+-import { addCollectionAndDocuments } from '../utils/firebase/firebase.utils';
++import { getCategoriesAndDocuments } from '../utils/firebase/firebase.utils';
+ 
+ export const ProductsContext = createContext({
+   products: [],
+@@ -9,6 +9,15 @@
+ export const ProductsProvider = ({ children }) => {
+   const [products, setProducts] = useState([]);
+ 
++  useEffect(() => {
++    const getCategoriesMap = async () => {
++      const categoryMap = await getCategoriesAndDocuments()
++      console.log(categoryMap)
++    }
++
++    getCategoriesMap();
++  }, [])
++
+   const value = { products };
+   return (
+     <ProductsContext.Provider value={value}>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"735bfa37-8661-4e72-a2d3-518a109608fb\" name=\"Changes\" comment=\"codigo errado\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/contexts/products.context.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/contexts/products.context.jsx\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Eg2hEFZZsJcr1IyZCYKPxOnOTm\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/AndréAvelarMoriyaSat/Desktop/crw-clothing/src/components/sign-in-form&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\AndréAvelarMoriyaSat\\Desktop\\crw-clothing\\src\\components\\sign-in-form\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\AndréAvelarMoriyaSat\\Desktop\\crw-clothing\\src\" />\r\n      <recent name=\"C:\\Users\\AndréAvelarMoriyaSat\\Desktop\\crw-clothing\\src\\components\\checkout-item\" />\r\n      <recent name=\"C:\\Users\\AndréAvelarMoriyaSat\\Desktop\\crw-clothing\\src\\routes\\checkout\" />\r\n      <recent name=\"C:\\Users\\AndréAvelarMoriyaSat\\Desktop\\crw-clothing\\src\\components\\cart-item\" />\r\n      <recent name=\"C:\\Users\\AndréAvelarMoriyaSat\\Desktop\\crw-clothing\\src\\components\\button\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"735bfa37-8661-4e72-a2d3-518a109608fb\" name=\"Changes\" comment=\"\" />\r\n      <created>1663003023272</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1663003023272</updated>\r\n      <workItem from=\"1663003026608\" duration=\"7325000\" />\r\n      <workItem from=\"1663085875765\" duration=\"741000\" />\r\n      <workItem from=\"1663089038853\" duration=\"301000\" />\r\n      <workItem from=\"1663089360387\" duration=\"5000\" />\r\n      <workItem from=\"1663090202557\" duration=\"25000\" />\r\n      <workItem from=\"1663090427556\" duration=\"1452000\" />\r\n      <workItem from=\"1663091977174\" duration=\"4029000\" />\r\n      <workItem from=\"1663099353920\" duration=\"1499000\" />\r\n      <workItem from=\"1663160440377\" duration=\"1942000\" />\r\n      <workItem from=\"1663165283917\" duration=\"8043000\" />\r\n      <workItem from=\"1663355620528\" duration=\"4900000\" />\r\n      <workItem from=\"1663616564348\" duration=\"3783000\" />\r\n      <workItem from=\"1663675022619\" duration=\"203000\" />\r\n      <workItem from=\"1663677638596\" duration=\"1252000\" />\r\n      <workItem from=\"1663711681869\" duration=\"2202000\" />\r\n      <workItem from=\"1663763266994\" duration=\"12823000\" />\r\n      <workItem from=\"1663862225558\" duration=\"1095000\" />\r\n      <workItem from=\"1663934898932\" duration=\"1188000\" />\r\n      <workItem from=\"1663954766573\" duration=\"32000\" />\r\n      <workItem from=\"1664830239519\" duration=\"3276000\" />\r\n      <workItem from=\"1664888338253\" duration=\"33000\" />\r\n      <workItem from=\"1665007173328\" duration=\"347000\" />\r\n      <workItem from=\"1665081689084\" duration=\"1800000\" />\r\n      <workItem from=\"1665083592544\" duration=\"2478000\" />\r\n      <workItem from=\"1665142714211\" duration=\"5688000\" />\r\n      <workItem from=\"1665160477874\" duration=\"59000\" />\r\n      <workItem from=\"1665160615466\" duration=\"68000\" />\r\n      <workItem from=\"1665160870352\" duration=\"29000\" />\r\n      <workItem from=\"1665425298470\" duration=\"1735000\" />\r\n      <workItem from=\"1665434281986\" duration=\"1698000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"commmit font\">\r\n      <created>1663019242123</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663019242123</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"commmit navigation and route\">\r\n      <created>1663098580926</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663098580926</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"commmit navigation and route\">\r\n      <created>1663185696988</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663185696988</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"commmit navigation and route\">\r\n      <created>1663624842741</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663624842741</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"commmit\">\r\n      <created>1663675217785</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663675217785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"commmit\">\r\n      <created>1663713918289</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663713918289</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"created authentication component and sign in form\">\r\n      <created>1663769905445</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663769905445</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"work progress\">\r\n      <created>1663784380727</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663784380728</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"products\">\r\n      <created>1663863334962</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663863334962</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ultimas aulas do curso de react cart-item, dropdown, context e etc\">\r\n      <created>1664832820845</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664832820845</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"commit de correção\">\r\n      <created>1665083667644</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665083667645</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"checkout page and checkout-item\">\r\n      <created>1665147485477</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665147485477</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"codigo errado\">\r\n      <created>1665435774532</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665435774532</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"codigo errado\">\r\n      <created>1665436066923</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665436066923</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"15\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"commmit font\" />\r\n    <MESSAGE value=\"commmit navigation and route\" />\r\n    <MESSAGE value=\"commmit\" />\r\n    <MESSAGE value=\"created authentication component and sign in form\" />\r\n    <MESSAGE value=\"work progress\" />\r\n    <MESSAGE value=\"products\" />\r\n    <MESSAGE value=\"ultimas aulas do curso de react cart-item, dropdown, context e etc\" />\r\n    <MESSAGE value=\"commit de correção\" />\r\n    <MESSAGE value=\"checkout page and checkout-item\" />\r\n    <MESSAGE value=\"codigo errado\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"codigo errado\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f7e543b9ae3340a774e90744e8b8559bf7a535df)
++++ b/.idea/workspace.xml	(date 1665520040234)
+@@ -1,8 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="codigo errado">
++    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment=".">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/contexts/products.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/products.context.jsx" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -19,6 +21,7 @@
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2Eg2hEFZZsJcr1IyZCYKPxOnOTm" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -89,7 +92,8 @@
+       <workItem from="1665160615466" duration="68000" />
+       <workItem from="1665160870352" duration="29000" />
+       <workItem from="1665425298470" duration="1735000" />
+-      <workItem from="1665434281986" duration="1698000" />
++      <workItem from="1665434281986" duration="3156000" />
++      <workItem from="1665517404101" duration="1672000" />
+     </task>
+     <task id="LOCAL-00001" summary="commmit font">
+       <created>1663019242123</created>
+@@ -189,7 +193,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1665436066923</updated>
+     </task>
+-    <option name="localTasksCounter" value="15" />
++    <task id="LOCAL-00015" summary="sou burro">
++      <created>1665436278117</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL-00015" />
++      <option name="project" value="LOCAL" />
++      <updated>1665436278120</updated>
++    </task>
++    <task id="LOCAL-00016" summary=".">
++      <created>1665436365533</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1665436365535</updated>
++    </task>
++    <option name="localTasksCounter" value="17" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -217,6 +235,8 @@
+     <MESSAGE value="commit de correção" />
+     <MESSAGE value="checkout page and checkout-item" />
+     <MESSAGE value="codigo errado" />
+-    <option name="LAST_COMMIT_MESSAGE" value="codigo errado" />
++    <MESSAGE value="sou burro" />
++    <MESSAGE value="." />
++    <option name="LAST_COMMIT_MESSAGE" value="." />
+   </component>
+ </project>
+\ No newline at end of file
