@@ -16,6 +16,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="2Eg2hEFZZsJcr1IyZCYKPxOnOTm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -299,6 +302,7 @@
     <MESSAGE value="algumas correções e navigate home page" />
     <MESSAGE value="_redirects" />
     <MESSAGE value="reducer step 1 - useReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="reducer step 1 - useReducer" />
+    <MESSAGE value="comparar codigos" />
+    <option name="LAST_COMMIT_MESSAGE" value="comparar codigos" />
   </component>
 </project>
