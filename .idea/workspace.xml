@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="comparar codigos" />
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="reducer step 1 - useReducer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,8 +103,8 @@
       <workItem from="1666209504338" duration="492000" />
       <workItem from="1666643207513" duration="3505000" />
       <workItem from="1666702408409" duration="20000" />
-      <workItem from="1666783968559" duration="1052000" />
-      <workItem from="1666797117037" duration="1014000" />
+      <workItem from="1666783968559" duration="5071000" />
+      <workItem from="1666794029531" duration="2654000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -253,19 +253,19 @@
       <option name="project" value="LOCAL" />
       <updated>1666209665836</updated>
     </task>
-    <task id="LOCAL-00022" summary="comparar codigos">
-      <created>1666800923634</created>
+    <task id="LOCAL-00022" summary="reducer step 1 - useReducer">
+      <created>1666785282612</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1666800923636</updated>
+      <updated>1666785282612</updated>
     </task>
-    <task id="LOCAL-00023" summary="comparar codigos">
-      <created>1666801167615</created>
+    <task id="LOCAL-00023" summary="reducer step 1 - useReducer">
+      <created>1666796823266</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1666801167615</updated>
+      <updated>1666796823267</updated>
     </task>
     <option name="localTasksCounter" value="24" />
     <servers />
