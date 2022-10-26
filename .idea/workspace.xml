@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="comparar codigos" />
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="comparar codigos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/cart.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/cart.context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/user.action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/user.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/user.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/user.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/reducer/reducer.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/reducer/reducer.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,6 +159,7 @@
       <workItem from="1666702408409" duration="20000" />
       <workItem from="1666783968559" duration="5071000" />
       <workItem from="1666794029531" duration="2654000" />
+      <workItem from="1666802752581" duration="1215000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -305,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666796823267</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="comparar codigos">
+      <created>1666802113715</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666802113715</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +364,7 @@
     <MESSAGE value="algumas correções e navigate home page" />
     <MESSAGE value="_redirects" />
     <MESSAGE value="reducer step 1 - useReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="reducer step 1 - useReducer" />
+    <MESSAGE value="comparar codigos" />
+    <option name="LAST_COMMIT_MESSAGE" value="comparar codigos" />
   </component>
 </project>
