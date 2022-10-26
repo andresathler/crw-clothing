@@ -104,7 +104,7 @@
       <workItem from="1666643207513" duration="3505000" />
       <workItem from="1666702408409" duration="20000" />
       <workItem from="1666783968559" duration="1052000" />
-      <workItem from="1666797117037" duration="749000" />
+      <workItem from="1666797117037" duration="1014000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666800923636</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="comparar codigos">
+      <created>1666801167615</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1666801167615</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
