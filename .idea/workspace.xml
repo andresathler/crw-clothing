@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="_redirects">
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="reducer step 1 - useReducer">
+      <change afterPath="$PROJECT_DIR$/src/store/root-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/user/user.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/reducer/reducer.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_09_47_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_09_47__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/directory-item/directory-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory-item/directory-item.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/categories.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/categories.context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/cart.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/cart.context.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contexts/user.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/user.context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +110,10 @@
       <workItem from="1666122452618" duration="157000" />
       <workItem from="1666205686039" duration="50000" />
       <workItem from="1666205764384" duration="2865000" />
+      <workItem from="1666209504338" duration="492000" />
+      <workItem from="1666643207513" duration="3505000" />
+      <workItem from="1666702408409" duration="20000" />
+      <workItem from="1666783968559" duration="1052000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -243,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665767187513</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="_redirects">
+      <created>1666209665836</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666209665836</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +296,7 @@
     <MESSAGE value="styled-components" />
     <MESSAGE value="algumas correções e navigate home page" />
     <MESSAGE value="_redirects" />
-    <option name="LAST_COMMIT_MESSAGE" value="_redirects" />
+    <MESSAGE value="reducer step 1 - useReducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="reducer step 1 - useReducer" />
   </component>
 </project>
