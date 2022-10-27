@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="comparar codigos">
+      <change afterPath="$PROJECT_DIR$/src/store/categories/category.action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/categories/category.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/categories/category.selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/categories/category.type.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/cart.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/cart.context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/categories.context.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/user.context.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/category/category.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/category/category.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/root-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/user/user.action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.action.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/user/user.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.selector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/user/user.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/reducer/reducer.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/reducer/reducer.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +164,8 @@
       <workItem from="1666702408409" duration="20000" />
       <workItem from="1666783968559" duration="5071000" />
       <workItem from="1666794029531" duration="2654000" />
-      <workItem from="1666802752581" duration="1215000" />
+      <workItem from="1666802752581" duration="1718000" />
+      <workItem from="1666872563754" duration="4350000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -332,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666802113715</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="comparar codigos">
+      <created>1666805041475</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666805041479</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
