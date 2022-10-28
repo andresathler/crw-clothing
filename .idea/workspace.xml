@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="categories redux">
-      <change afterPath="$PROJECT_DIR$/src/store/cart/cart.action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/cart/cart.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/cart/cart.selector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/cart/cart.type.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/categories/category.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/categories/category.selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/cart.context.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.selector.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +161,8 @@
       <workItem from="1666794029531" duration="2654000" />
       <workItem from="1666802752581" duration="1718000" />
       <workItem from="1666872563754" duration="12026000" />
+      <workItem from="1666975247671" duration="83000" />
+      <workItem from="1666989507227" duration="3936000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
