@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="categories redux">
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="cart redux">
+      <change afterPath="$PROJECT_DIR$/src/components/spinner/spinner.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/spinner/spinner.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/middleware/logger.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/cart.context.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/category/category.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/category/category.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/categories/category.action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/categories/category.action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/categories/category.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/categories/category.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/categories/category.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/categories/category.selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/categories/category.type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/categories/category.type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,11 +105,11 @@
       <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\sign-in-form" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\spinner" />
       <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\category-preview" />
       <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src" />
       <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\checkout-item" />
       <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\routes\checkout" />
-      <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\cart-item" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -162,7 +165,10 @@
       <workItem from="1666802752581" duration="1718000" />
       <workItem from="1666872563754" duration="12026000" />
       <workItem from="1666975247671" duration="83000" />
-      <workItem from="1666989507227" duration="3936000" />
+      <workItem from="1666989507227" duration="4360000" />
+      <workItem from="1667237146796" duration="8885000" />
+      <workItem from="1667510549959" duration="611000" />
+      <workItem from="1667565779929" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -353,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666907376588</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="cart redux">
+      <created>1666993748670</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1666993748676</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +403,7 @@
     <MESSAGE value="reducer step 1 - useReducer" />
     <MESSAGE value="comparar codigos" />
     <MESSAGE value="categories redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="categories redux" />
+    <MESSAGE value="cart redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart redux" />
   </component>
 </project>
