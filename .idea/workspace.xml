@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="redux and persist">
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="login, sign up and sign out saga">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sign-up-form/sign-up-form.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up-form/sign-up-form.component.jsx" afterDir="false" />
@@ -166,7 +166,7 @@
       <workItem from="1667584006981" duration="1408000" />
       <workItem from="1667586477462" duration="6155000" />
       <workItem from="1667824598775" duration="385000" />
-      <workItem from="1668169387846" duration="4421000" />
+      <workItem from="1668169387846" duration="4951000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -371,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667584786203</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="login, sign up and sign out saga">
+      <created>1668290165284</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1668290165284</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,6 +417,7 @@
     <MESSAGE value="categories redux" />
     <MESSAGE value="cart redux" />
     <MESSAGE value="redux and persist" />
-    <option name="LAST_COMMIT_MESSAGE" value="redux and persist" />
+    <MESSAGE value="login, sign up and sign out saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="login, sign up and sign out saga" />
   </component>
 </project>
