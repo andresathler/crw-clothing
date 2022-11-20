@@ -6,7 +6,7 @@ import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 import { selectCartTotal } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 
-import { FormContainer, PaymentFormContainer } from "./payment-form.styles";
+import {FormContainer, PaymentButton, PaymentFormContainer} from "./payment-form.styles";
 
 
 
@@ -42,7 +42,7 @@ const PaymentForm = () => {
             payment_method: {
                 card: elements.getElement(CardElement),
                 billing_details: {
-                    name: currentUser ? currentUser.displayName : 'Yihua Zhang',
+                    name: currentUser ? currentUser.displayName : 'Guest',
                 },
             },
         });
@@ -63,7 +63,7 @@ const PaymentForm = () => {
             <FormContainer onSubmit={paymentHandler}>
                 <h2>Credit Card Payment:</h2>
                 <CardElement />
-                <Button buttonType={BUTTON_TYPE_CLASSES.inverted}>Pay now</Button>
+                <PaymentButton isLoading={isProcessingPayment} buttonType={BUTTON_TYPE_CLASSES.inverted}>Pay now</PaymentButton>
             </FormContainer>
         </PaymentFormContainer>
     )
