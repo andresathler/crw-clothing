@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="login, sign up and sign out saga">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlify/functions/create-payment-intent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/payment-form/payment-form.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/payment-form/payment-form.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/stripe/stripe.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-up-form/sign-up-form.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up-form/sign-up-form.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/root-saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/root-saga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.saga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +168,11 @@
       <workItem from="1667584006981" duration="1408000" />
       <workItem from="1667586477462" duration="6155000" />
       <workItem from="1667824598775" duration="385000" />
-      <workItem from="1668169387846" duration="4951000" />
+      <workItem from="1668169387846" duration="4973000" />
+      <workItem from="1668696941509" duration="9233000" />
+      <workItem from="1668782093240" duration="667000" />
+      <workItem from="1668785911912" duration="124000" />
+      <workItem from="1668786049786" duration="880000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -378,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668290165284</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="login, sign up and sign out saga">
+      <created>1668290182800</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1668290182800</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
