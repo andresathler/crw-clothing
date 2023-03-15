@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="login, sign up and sign out saga">
-      <change afterPath="$PROJECT_DIR$/src/store/cart/cart.types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cart/cart.selector.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cart/cart.type.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/categories/category.saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/categories/category.saga.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/categories/category.selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/categories/category.selector.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/middleware/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/middleware/logger.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/root-saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/root-saga.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.saga.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.selector.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/user.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/user.types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="login, sign up and sign out saga" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,7 +178,7 @@
       <workItem from="1672923441597" duration="343000" />
       <workItem from="1678888048083" duration="442000" />
       <workItem from="1678889408358" duration="4090000" />
-      <workItem from="1678900420417" duration="8944000" />
+      <workItem from="1678900420417" duration="9351000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
