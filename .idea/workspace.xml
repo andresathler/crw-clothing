@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="login, sign up and sign out saga" />
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="UPADTE&#10;&#10;- teste&#10;- teste" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,6 +109,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="" />
+      <changelist id="" name="sagas" comment="" />
       <created>1663003023272</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -178,7 +179,7 @@
       <workItem from="1672923441597" duration="343000" />
       <workItem from="1678888048083" duration="442000" />
       <workItem from="1678889408358" duration="4090000" />
-      <workItem from="1678900420417" duration="9351000" />
+      <workItem from="1678900420417" duration="9761000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -404,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668979172477</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="UPADTE&#10;&#10;- teste&#10;- teste">
+      <created>1678912618990</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1678912618990</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,6 +452,7 @@
     <MESSAGE value="cart redux" />
     <MESSAGE value="redux and persist" />
     <MESSAGE value="login, sign up and sign out saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="login, sign up and sign out saga" />
+    <MESSAGE value="UPADTE&#10;&#10;- teste&#10;- teste" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPADTE&#10;&#10;- teste&#10;- teste" />
   </component>
 </project>
