@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="." />
+    <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="UPDATE&#10;-type button&#10;-type form-input&#10;-type sign-in-form&#10;-install type styled components">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-input/form-input.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-input/form-input.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-input/form-input.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-input/form-input.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +189,7 @@
       <workItem from="1672923441597" duration="343000" />
       <workItem from="1678888048083" duration="442000" />
       <workItem from="1678889408358" duration="4090000" />
-      <workItem from="1678900420417" duration="10101000" />
+      <workItem from="1678900420417" duration="12197000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
@@ -426,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678912722551</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="tipando root saga">
+      <created>1678913040041</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1678913040041</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,8 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commmit font" />
-    <MESSAGE value="commmit navigation and route" />
     <MESSAGE value="commmit" />
     <MESSAGE value="created authentication component and sign in form" />
     <MESSAGE value="work progress" />
@@ -469,6 +484,8 @@
     <MESSAGE value="UPADTE&#10;&#10;- teste&#10;- teste" />
     <MESSAGE value="UPADTE&#10;teste&#10;teste" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="tipando root saga" />
+    <MESSAGE value="UPDATE&#10;-type button&#10;-type form-input&#10;-type sign-in-form&#10;-install type styled components" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE&#10;-type button&#10;-type form-input&#10;-type sign-in-form&#10;-install type styled components" />
   </component>
 </project>
