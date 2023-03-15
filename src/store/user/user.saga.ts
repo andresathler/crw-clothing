@@ -96,6 +96,8 @@ export function* signUp({ payload: { email, password, displayName } }: SignUpSta
   } catch (error) {
     yield* put(signUpFailed(error as Error));
   }
+
+  console.log("oi")
 }
 
 export function* signOut() {
