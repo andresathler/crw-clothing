@@ -5,15 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="UPDATE&#10;-type button&#10;-type form-input&#10;-type sign-in-form&#10;-install type styled components">
+      <change afterPath="$PROJECT_DIR$/src/custom.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-input/form-input.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-input/form-input.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-input/form-input.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-input/form-input.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-form/sign-in-form.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-item/cart-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-item/cart-item.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-item/cart-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-item/cart-item.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-preview/category-preview.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory-item/directory-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory-item/directory-item.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory-item/directory-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory-item/directory-item.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment-form/payment-form.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment-form/payment-form.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment-form/payment-form.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment-form/payment-form.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-up-form/sign-up-form.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up-form/sign-up-form.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-up-form/sign-up-form.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up-form/sign-up-form.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/spinner/spinner.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/spinner/spinner.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/spinner/spinner.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/spinner/spinner.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/authentication/authentication.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/authentication/authentication.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/authentication/authentication.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/authentication/authentication.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/category/category.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/category/category.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/category/category.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/category/category.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/checkout/checkout.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/home/home.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/home/home.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/navigation/navigation.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/navigation/navigation.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/navigation/navigation.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shop/shop.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/root-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,27 +110,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/andre.sathler_evolua/Desktop/crw-clothing",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Program Files\\nodejs\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
-    "ts.external.directory.path": "C:\\Users\\andre.sathler_evolua\\Desktop\\crw-clothing\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre.sathler_evolua/Desktop/crw-clothing&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Program Files\\nodejs\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\andre.sathler_evolua\\Desktop\\crw-clothing\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AndréAvelarMoriyaSat\Desktop\crw-clothing\src\components\sign-in-form" />
@@ -119,7 +147,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="735bfa37-8661-4e72-a2d3-518a109608fb" name="Changes" comment="" />
-      <changelist id="" name="sagas" comment="" />
       <created>1663003023272</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -190,6 +217,7 @@
       <workItem from="1678888048083" duration="442000" />
       <workItem from="1678889408358" duration="4090000" />
       <workItem from="1678900420417" duration="12197000" />
+      <workItem from="1678975918365" duration="5115000" />
     </task>
     <task id="LOCAL-00001" summary="commmit font">
       <created>1663019242123</created>
